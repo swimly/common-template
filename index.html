@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="./src/theme/default/variable.css" />
+    <link rel="stylesheet" href="docs/assets/styles/vue.css" />
+    <link rel="stylesheet" href="./libs/common.css" />
+    <link
+			rel="stylesheet"
+			data-name="vs/editor/editor.main"
+			href="https://unpkg.com/monaco-editor@latest/min/vs/editor/editor.main.css"
+		/>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: '',
+        themeColor: '#0183fc',
+        loadSidebar: 'docs/common/_sidebar.md',
+        loadNavbar: 'docs/_navbar.md',
+        onlyCover: true,
+        coverpage: 'docs/_coverpage.md',
+        repo: '',
+        alias: {
+          '/docs/common/.*/_sidebar.md': 'docs/common/_sidebar.md',
+          '/docs/webcomponent/.*/_sidebar.md': 'docs/webcomponent/_sidebar.md',
+          '/docs/.*/_navbar.md': 'docs/_navbar.md',
+          '/src/.*/_navbar.md': 'docs/_navbar.md',
+          '/src/.*/common/_sidebar.md': 'docs/common/_sidebar.md',
+        }
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="docs/assets/libs/jquery-3.5.1.min.js"></script>
+    <!-- manoca editor -->
+    <script>var require = { paths: { vs: 'https://unpkg.com/monaco-editor@latest/min/vs' } };</script>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/editor/editor.main.nls.js"></script>
+		<script src="https://unpkg.com/monaco-editor@latest/min/vs/editor/editor.main.js"></script>
+    <script src="docs/assets/libs/createMonaco.js"></script>
+    <!-- 组件调用 -->
+    <script src="libs/common.js"></script>
+    <script type="module" src="www/build/common-template.esm.js"></script>
+    <script nomodule src="www/build/common-template.js"></script>
+    <!-- docsify plugin -->
+    <script src="docs/assets/plugins/renderCard.js"></script>
+    <script src="docs/assets/plugins/renderPhone.js"></script>
+    <script src="docs/assets/plugins/renderManocaEditor.js"></script>
+  </body>
+</html>

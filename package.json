@@ -1,0 +1,62 @@
+{
+  "name": "common",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/common-template/common-template.esm.js",
+  "output": "./libs",
+  "prefix": "v-",
+  "browserslist": [
+    "ios 7"
+  ],
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "rollup": "cross-env NODE_ENV=development gulp dev",
+    "bundle": "cross-env NODE_ENV=production gulp build",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "dev": "concurrently \"yarn start\" \"yarn rollup\"",
+    "pro": "concurrently \"yarn build\" \"yarn bundle\""
+  },
+  "dependencies": {
+    "@stencil/core": "^2.0.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@stencil/sass": "^1.4.1",
+    "browser-sync": "^2.26.14",
+    "concurrently": "^6.0.0",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-convert-css-var": "^0.1.3",
+    "gulp-filter": "^6.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "rollup": "^2.41.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "through2": "^4.0.2",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  }
+}

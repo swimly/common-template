@@ -1,0 +1,32 @@
+$color: (
+  primary: #0183FC,
+  warning: #FAAD14,
+  success: #52C41A,
+  danger: #F5222D
+) !default;
+
+$text: (
+  black: #000,
+  default: #333,
+  regular: #666,
+  secondary: #999,
+  placeholder: #bfbfbf,
+  white: #fff
+) !default;
+
+$background: (
+  black: #000,
+  default: #f3f3f3,
+  light: #f6f8fd,
+  extra: #f9f9f9,
+  white: #fff
+);
+
+$border: (
+  default: rgba(0,0,0,.15),
+  light: #e6e6e6
+) !default;
+
+$shadow: (
+  default: rgba(51,51,51,.1)
+) !default;

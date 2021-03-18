@@ -1,0 +1,24 @@
+:root{
+  --color-primary: #0183FC;
+  --color-warning: #FAAD14;
+  --color-success: #52C41A;
+  --color-danger: #F5222D;
+
+  --text-black: #000;
+  --text-default: #333;
+  --text-regular: #666;
+  --text-secondary: #999;
+  --text-placeholder: #bfbfbf;
+  --text-white: #fff;
+
+  --background-black: #000;
+  --background-default: #f3f3f3;
+  --background-light: #f6f8fd;
+  --background-extra: #f9f9f9;
+  --background-white: #fff;
+
+  --border-default: rgba(0,0,0,.15);
+  --border-light: #e6e6e6;
+
+  --shadow-default: rgba(51,51,51,.1);
+}

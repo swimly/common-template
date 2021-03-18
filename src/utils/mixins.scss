@@ -1,0 +1,9 @@
+@function v($css, $scss) {
+  $color: '';
+  @if ($ie) {
+    $color: $scss;
+  } @else {
+    $color: var($css, $scss);
+  }
+  @return $color;
+}

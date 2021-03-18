@@ -1,0 +1,9 @@
+@import '../../theme/default/config.scss';
+.v-button{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  height: map-get($map: $button-height, $key: default);
+  background-color: v(--color-primary, map-get($color, primary));
+}
